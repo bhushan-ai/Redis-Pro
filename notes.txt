@@ -1,0 +1,6 @@
+
+
+ttl--- to get time live
+set(key,value)--- store single variable
+hset--- store object
+hgetall---like getting entire object
