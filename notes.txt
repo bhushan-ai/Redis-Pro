@@ -4,3 +4,10 @@ ttl--- to get time live
 set(key,value)--- store single variable
 hset--- store object
 hgetall---like getting entire object
+
+
+** Email ques with redis list
+lpush - push value from left side
+rpush - push value from right side
+lpop - pop value from left side
+rpop - pop value from right side
