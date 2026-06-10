@@ -24,12 +24,19 @@ app.post("/welcome-email", async (req, res) => {
       },
     },
   );
+  res.status(200).json({
+    message: "Welcome email job has been added to the queue!",
+    jobId: job.id,
+  });
+});
+
+app.delete("/welcome-email/:id", async (req, res) => {
+  const jobId = req.params.id;
+  const job = await emailQueue.getJob(jobId);
+  await job.remove();
   res
     .status(200)
-    .json({
-      message: "Welcome email job has been added to the queue!",
-      jobId: job.id,
-    });
+    .json({ message: `Job with id ${jobId} has been removed from the queue!` });
 });
 
 app.listen(PORT, () => {
