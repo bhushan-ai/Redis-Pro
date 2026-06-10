@@ -18,3 +18,8 @@ Queue
 producers- tasks sends at speed to workers
 to  avoid workload we use Ques
 Worker- handle the tasks
+
+1.first create queue using BullMQ  and  create connection 
+2.then create workers using worker from BullMQ and connection 
+3.create state completed and failed and so on using worker eg. worker.on("complete",()=>{})
+4.then create Apis of Add and Remove queues using ques which is created in queue.js file
