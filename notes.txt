@@ -23,3 +23,13 @@ Worker- handle the tasks
 2.then create workers using worker from BullMQ and connection 
 3.create state completed and failed and so on using worker eg. worker.on("complete",()=>{})
 4.then create Apis of Add and Remove queues using ques which is created in queue.js file
+
+
+*** pub/sub **
+Its a  notification system by default comes with system
+to send notification or anything to publisher to subscriber
+to create this first create subscriber using redis url
+create subscriber with channel we can create multiple channels
+
+publisher publish msg to channel using channel name with msg
+and subscriber actively listen to channels
