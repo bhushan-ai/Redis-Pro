@@ -34,7 +34,7 @@ app.get("/leaderboard/:userId/rank", async (req, res) => {
   res.json({ userId: req.params.userId, rank: rank + 1 });
 });
 
-
+//assignment completed
 app.listen(PORT, () => {
   console.log(`Server is running on port http://localhost:${PORT}`);
 });
