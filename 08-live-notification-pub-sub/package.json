@@ -1,10 +1,11 @@
 {
-  "name": "02-setup-of-redis",
+  "name": "08-live-notification-pub-sub",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node --watch src/api.js"
+    "api": "node src/api.js",
+    "subscriber": "node src/subscriber.js"
   },
   "dependencies": {
     "dotenv": "^17.4.2",

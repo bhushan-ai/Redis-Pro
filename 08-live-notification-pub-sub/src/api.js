@@ -2,7 +2,6 @@ import "dotenv/config";
 import express from "express";
 import Redis from "ioredis";
 const PORT = process.env.PORT || 4000;
-import { emailQueue } from "./queue.js";
 
 const app = express();
 app.use(express.json());

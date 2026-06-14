@@ -1,5 +1,5 @@
 {
-  "name": "02-setup-of-redis",
+  "name": "07-order-confirmation-jobs-with-bullmq",
   "version": "1.0.0",
   "private": true,
   "type": "module",

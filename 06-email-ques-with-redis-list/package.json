@@ -1,5 +1,5 @@
 {
-  "name": "02-setup-of-redis",
+  "name": "06-email-queues-with-redis-list",
   "version": "1.0.0",
   "private": true,
   "type": "module",
